@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">IMCCalculator</string>
+    <string name="title_composition">Composición corporal</string>
+    <string name="index_imc">Índice de masa corporal (IMC)</string>
+    <string name="lower_weight">Peso inferior al normal</string>
+    <string name="Range_Low">Menos de 18.5</string>
+
+</resources>

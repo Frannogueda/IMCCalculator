@@ -26,8 +26,15 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.graphicsLayer
+import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.text.font.FontStyle
+import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
+import com.example.imccalculator.ui.theme.Gradient
 import com.example.imccalculator.ui.theme.IMCCalculatorTheme
 
 class MainActivity : ComponentActivity() {
@@ -50,15 +57,16 @@ class MainActivity : ComponentActivity() {
 fun IMCCalculatorApp(modifier: Modifier = Modifier){ // principal
     //dos variables mutables para recordar
     Column(
-        modifier = modifier,
+        modifier = modifier
+            .background(brush = Gradient),
         horizontalAlignment = Alignment.CenterHorizontally,
-        //verticalArrangement = Arrangement.spacedBy(50.dp)
+        verticalArrangement = Arrangement.Center
     ) {
-        Spacer(modifier = Modifier.height(100.dp))
         Text(
             text = "IMC", //a seguir metiendo
-
+            fontSize = 50.sp
         )
+        Spacer(modifier = Modifier.height(50.dp))
        EditNumberField(
 
        )
@@ -70,16 +78,24 @@ fun IMCCalculatorApp(modifier: Modifier = Modifier){ // principal
             text = "PointOfWeight :"
         )
         TextViewsInfo(
-
+            text = R.string.title_composition,
+            descript = R.string.index_imc
         )
         TextViewsInfo(
-
+            text = R.string.lower_weight,
+            descript = R.string.range_low
         )
         TextViewsInfo(
-
+            text = R.string.normal,
+            descript = R.string.range_normal
         )
         TextViewsInfo(
-
+            text = R.string.excess,
+            descript = R.string.range_excess
+        )
+        TextViewsInfo(
+            text = R.string.exceeded,
+            descript = R.string.range_exceeded
         )
     }
 }
@@ -96,20 +112,22 @@ private fun EditNumberField(
 }
 @Composable
 private fun TextViewsInfo(
-    modifier: Modifier = Modifier,
-    //text: String
+    modifier : Modifier = Modifier,
+    @StringRes text : Int,
+    @StringRes descript : Int
 ){
     Row(
         modifier = modifier
             .padding(20.dp)
             .fillMaxWidth(),
-        horizontalArrangement = Arrangement.SpaceBetween
+        horizontalArrangement = Arrangement.SpaceBetween,
     ) {
         Text(
-            text = "primer text",
+            text = stringResource(text),
+            textAlign = TextAlign.Justify
         )
         Text(
-            text = " Comentario",
+            text = stringResource(descript)
         )
     }
 }

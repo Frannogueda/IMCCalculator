@@ -2,7 +2,17 @@
     <string name="app_name">IMCCalculator</string>
     <string name="title_composition">Composición corporal</string>
     <string name="index_imc">Índice de masa corporal (IMC)</string>
+
     <string name="lower_weight">Peso inferior al normal</string>
-    <string name="Range_Low">Menos de 18.5</string>
+    <string name="range_low">Menos de 18.5</string>
+
+    <string name="normal">Normal</string>
+    <string name="range_normal">18.5 – 24.9</string>
+
+    <string name="excess">Peso superior al normal</string>
+    <string name="range_excess">25.0 – 29.9</string>
+
+    <string name="exceeded">Obesidad</string>
+    <string name="range_exceeded">	Más de 30.0</string>
 
 </resources>

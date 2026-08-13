@@ -11,7 +11,9 @@ val Purple40 = Color(0xFF6650a4)
 val PurpleGrey40 = Color(0xFF625b71)
 val Pink40 = Color(0xFF7D5260)
 
-val RedScarlat = Color(0xFFD52458)
+val colorTest1 = Color(0xFF000000)
+
+val colorTest2 = Color(0xFFB6003D)
 val Gradient = Brush.verticalGradient(
-    colors = listOf(RedScarlat,Purple80)
+    colors = listOf(colorTest1,colorTest2)
 )

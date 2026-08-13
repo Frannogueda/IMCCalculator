@@ -15,4 +15,9 @@
     <string name="exceeded">Obesidad</string>
     <string name="range_exceeded">	Más de 30.0</string>
 
+    <string name="weight">Ingrese su Peso</string>
+    <string name="height">Ingrese su Altura</string>
+    <string name="pointofweight">Puntos de Peso : </string>
+    <string name="cm">Cm</string>
+    <string name="kg">Kg</string>
 </resources>

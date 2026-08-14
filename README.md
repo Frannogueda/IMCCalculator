@@ -7,8 +7,8 @@ Aprendizajes Clave & Conceptos de Jetpack Compose
 Este proyecto fue construido con el objetivo de consolidar la gestión de estado, la validación de entradas en tiempo real y el manejo seguro de datos en Compose:
 
 *Estado y Observabilidad (State y MutableState)**
-  * `MutableState`:** Uso de `mutableStateOf()` para crear valores observables que notifican a Compose cuando el peso o la altura cambian.
-  * `remember`:** Preservación del estado a través de las recomposiciones de la interfaz gráfica.
+  * `MutableState`: Uso de `mutableStateOf()` para crear valores observables que notifican a Compose cuando el peso o la altura cambian.
+  * `remember`: Preservación del estado a través de las recomposiciones de la interfaz gráfica.
   * Delegados de Kotlin:** Implementación de `by remember { mutableStateOf("") }` para un manejo de variables más limpio e intuitivo.
 
 * Reutilización de Componentes & Elevación de Estado

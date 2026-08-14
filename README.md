@@ -16,8 +16,8 @@ Este proyecto fue construido con el objetivo de consolidar la gestión de estado
   * Parametrización de propiedades de `TextField` (`keyboardOptions`, `label`, `singleLine`) para adaptar cada input a su propósito.
 
 * Validación en Tiempo Real & Programación Defensiva
-  * Manejo Seguro de Nulos:** Uso de `.toDoubleOrNull() ?: 0.0` para evitar fallos de la aplicación (*crashes*) al manipular cadenas vacías o textos inválidos.
-  * Lógica de Control en Expresiones:** Evaluación de condiciones en tiempo real (como validar la cantidad de dígitos ingresados o limitar rangos de peso/IMC) para evitar cálculos prematuros o mostrar resultados desorbitados mientras el usuario escribe.
+  * Manejo Seguro de Nulos: Uso de `.toDoubleOrNull() ?: 0.0` para evitar fallos de la aplicación (*crashes*) al manipular cadenas vacías o textos inválidos.
+  * Lógica de Control en Expresiones: Evaluación de condiciones en tiempo real (como validar la cantidad de dígitos ingresados o limitar rangos de peso/IMC) para evitar cálculos prematuros o mostrar resultados desorbitados mientras el usuario escribe.
 
 * Formatos y Presentación de Datos
   * Formateo de cadenas y limitación de decimales para mostrar resultados limpios y legibles.
